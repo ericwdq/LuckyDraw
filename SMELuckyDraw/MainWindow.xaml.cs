@@ -64,7 +64,7 @@ namespace SMELuckyDraw
 
             stopTimer.Interval = TimeSpan.FromMilliseconds(1000);
             stopTimer.Tick += new EventHandler(stopTimer_Tick);
-
+            PrizesNumber.Content = _logic.GetExceptionCount();
             _logic.Init();
 
             // Init Id char map for i, c & d user
@@ -112,6 +112,12 @@ namespace SMELuckyDraw
             {
                 stopTimer.Stop();
                 lbWinner.Content = finalValueDesc;
+                lbWinner.Visibility = Visibility.Visible;
+                PrizesNumber.Content = _logic.GetExceptionCount();
+                if (PrizesNumber.Visibility != Visibility.Visible)
+                {
+                    PrizesNumber.Visibility = Visibility.Visible;
+                }
                 winnerTimer.Stop();
                 buttonStart.IsEnabled = true;
 
@@ -193,6 +199,7 @@ namespace SMELuckyDraw
             buttonStop.IsEnabled = true;
             numberGroupMain.TurnStart();
             lbWinner.Content = "";
+            lbWinner.Visibility = Visibility.Hidden;
             winnerTimer.Stop();
             stopCounter = delayStopFrom;
 
@@ -275,6 +282,8 @@ namespace SMELuckyDraw
         {
             if (MessageBox.Show("Are you sure to reset?", "SYSTEM MESSAGE", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
             {
+                PrizesNumber.Content = "0";
+                PrizesNumber.Visibility = Visibility.Hidden;
                 _logic.ResetApp();
                 lbMsg.Content = "Please press ENTER to start!";
             }

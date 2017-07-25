@@ -1,0 +1,6 @@
+font color
+
+#ffe484
+
+Foreground="Goldenrod"
+

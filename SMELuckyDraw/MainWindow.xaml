@@ -70,10 +70,11 @@
         </TextBox>-->
         <Label Name="lbMsg" Grid.Row="6" Content="Please press ENTER to start!" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" Panel.ZIndex="1001" Foreground="#FF7BFFFF" IsTabStop="True" TabIndex="1" Background="#0CFFFFFF"/>
         <my:NumberGroup Grid.Row="4" Height="311" HorizontalAlignment="Center" x:Name="numberGroupMain" Width="900" HorizontalContentAlignment="Center" VerticalAlignment="Top" Margin="58,10,58,0" TabIndex="1" />
-        <Label Name="lbWinner" Content="" HorizontalAlignment="Center" Margin="0" Grid.Row="3" VerticalAlignment="Center" FontSize="48" FontWeight="Bold" Foreground="#FF64FFDA" Background="#33000000" />
+        <Label Name="lbWinner" Content="" HorizontalAlignment="Center" Margin="0" Grid.Row="3" VerticalAlignment="Center" FontSize="48" FontWeight="Bold" Foreground="#FF64FFDA" Background="#33000000" Visibility="Hidden"/>
         <Image HorizontalAlignment="Left" Height="71" Margin="5,5,0,0" Grid.Row="1" VerticalAlignment="Top" Width="144" Source="image/SAP-Logo-144x71.jpg" Stretch="None" >
         </Image>
-        <Label Content=" SME Lucky Draw  " HorizontalAlignment="Left" Margin="148,4,0,4" Grid.Row="1" VerticalAlignment="Center" FontSize="46" FontFamily="Segoe UI" FontWeight="Bold" Foreground="#FFFF5252" Background="#66000000"/>
+        <Label Content=" SME Lucky Draw 2017  " HorizontalAlignment="Left" Margin="148,4,0,4" Grid.Row="1" VerticalAlignment="Center" FontSize="46" FontFamily="Segoe UI" FontWeight="Bold" Foreground="#FFFF5252" Background="#66000000"/>
+        <Label Name="PrizesNumber" Content="0" HorizontalAlignment="Right"  Grid.Row="1" VerticalAlignment="Center"  FontSize="36" FontFamily="Yu Gothic UI" FontWeight="Light" Foreground="Goldenrod" Background="#66000000" Margin="0,5.2,9.6,19.4" Visibility="Hidden" />
         <Button Name="btnRest" Content="Reset" HorizontalAlignment="Right" Margin="0,0,10,4" Grid.Row="6" VerticalAlignment="Bottom" Width="60" Height="35" FontSize="16" IsTabStop="False" Click="btnRest_Click" GotFocus="btnRest_GotFocus" Padding="0" FontWeight="Bold" Foreground="#FF004D00">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
@@ -84,7 +85,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="btnSunny" Content="Lucky Prize" HorizontalAlignment="Right" Margin="0,0,80,4" Grid.Row="6" VerticalAlignment="Bottom" Width="110" Height="35" FontSize="16" IsTabStop="False" Click="btnSunny_Click" GotFocus="btnSunny_GotFocus" Padding="0" FontWeight="Bold" Foreground="#FF004D40">
+        <Button x:Name="btnSunny" Content="Lucky Prize" HorizontalAlignment="Right" Margin="0,0,80,4" Grid.Row="6" VerticalAlignment="Bottom" Width="110" Height="35" FontSize="16" IsTabStop="False" Click="btnSunny_Click" GotFocus="btnSunny_GotFocus" Padding="0" FontWeight="Bold" Foreground="#FF004D40" Visibility="Hidden">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFF3F3F3" Offset="0"/>

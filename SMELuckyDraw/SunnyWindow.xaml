@@ -3,7 +3,7 @@
         xmlns:my="clr-namespace:SMELuckyDraw.UC" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Lucky Prize" Height="740" Width="1024" WindowStartupLocation="CenterScreen" Topmost="True" Icon="image/monkey.ico" KeyUp="Window_KeyUp">
     <Window.Background>
-        <ImageBrush ImageSource="image/bg02.png"/>
+        <ImageBrush ImageSource="image/bg02.jpg"/>
     </Window.Background>
     <Grid>
         <Grid.RowDefinitions>
